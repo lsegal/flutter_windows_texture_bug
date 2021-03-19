@@ -38,8 +38,10 @@ class _AppState extends State<App> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Resize window to see viewport corruption of Icon() widgets on left',
+                'Expecting icons on left and image on right\n' +
+                    'Resize window to see viewport corruption of all drawable viewports',
                 style: TextStyle(fontSize: 24),
+                textAlign: TextAlign.center,
               ),
             ),
             Expanded(
@@ -51,7 +53,6 @@ class _AppState extends State<App> {
                       children: [
                         Icon(Icons.account_circle_rounded, size: 200),
                         Icon(Icons.analytics_rounded, size: 200),
-                        Icon(Icons.assignment_turned_in_rounded, size: 200),
                       ],
                     ),
                   ),
